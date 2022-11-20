@@ -5,7 +5,7 @@
     flex-direction: column;
     min-height: 100vh;
 }
-@media only screen and (min-width: 960){
+@media only screen and (max-width: 960){
     .Objects{
         min-height: 85vh;
     }
