@@ -16,7 +16,7 @@ Tech-Hero : WebGl ( React-Three )
 
 
 ## What is WindPower?
-WindPower is a a WebGL based project that renders a 3D animated windmill which serves as a fun interactive landing page and also helps to promote the usage clean energy power sources such as Wind Energy Plants. 
+WindPower is a a WebGL based project that renders a 3D animated windmill which serves as a fun interactive landing page and also helps to promote the usage clean energy power sources such as Wind Energy Plants. The WindMIll has hover effect enabled. 
 
 # Team Members
 
