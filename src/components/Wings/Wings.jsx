@@ -5,9 +5,15 @@ import * as THREE from 'three';
 function Wings3(){
     const [hover, setHover] = useState(false);
     const myMesh = React.useRef();
+    const width = window.innerWidth;
     useFrame(() => {
-        if (hover) {
-          myMesh.current.rotation.z -= 0.025;
+        if (width > 960){
+            if (hover) {
+                myMesh.current.rotation.z -= 0.025;
+            }
+        }
+        else{
+            myMesh.current.rotation.z -= 0.025;
         }
       });
     return(
