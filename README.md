@@ -31,9 +31,8 @@ WindPower is a a WebGL based project that renders a 3D animated windmill which s
 - [x] **No Plugins**
 
 ## 🔧 Project Demo:
-. 
 ### Live Demo
-Hosted Link : https://harmonious-halva-470f5e.netlify.app/
+Hosted Link : https://windpower.netlify.app/
 
 # Installation
 Steps To Run the Project:
