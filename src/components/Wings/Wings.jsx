@@ -13,7 +13,7 @@ function Wings3(){
             }
         }
         else{
-            // myMesh.current.rotation.z -= 0.025;
+            myMesh.current.rotation.z -= 0.025;
         }
       });
     return(
