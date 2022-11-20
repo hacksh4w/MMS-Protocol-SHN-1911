@@ -1,12 +1,18 @@
-import React,{useRef} from 'react'
+import React,{useRef,useState} from 'react'
 import {Canvas,useFrame} from "@react-three/fiber";
 import './Wings.css'
 import * as THREE from 'three';
 function Wings3(){
+    const [hover, setHover] = useState(false);
     const myMesh = React.useRef();
-    useFrame(()=>{myMesh.current.rotation.z +=0.01})
+    useFrame(() => {
+        if (hover) {
+          myMesh.current.rotation.z -= 0.015;
+        }
+      });
+
     return(
-        <mesh ref={myMesh} position={[0,1.05,0]} >
+        <mesh ref={myMesh} position={[0,1.05,0]} onPointerOver={() => {setHover(true);}} onPointerOut={() => {setHover(false);}}>
             <mesh rotation={[0,0,0.785398]} position={[-1.6,1.6,0]}>
                 <coneGeometry attatch="geometry" args={[0.2,4,64,1,0,6.283185307179586]}/>
                 <meshNormalMaterial attach="material"/>

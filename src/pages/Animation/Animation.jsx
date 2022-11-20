@@ -8,7 +8,6 @@ export default function Animation() {
     <div className='Objects'>
         <Sphere/>
         <Stick/>
-        {/* <Wings3/> */}
         <Wings/>
     </div>
   )
