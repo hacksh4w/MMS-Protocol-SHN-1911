@@ -13,11 +13,11 @@ function Wings3(){
             }
         }
         else{
-            myMesh.current.rotation.z -= 0.025;
+            // myMesh.current.rotation.z -= 0.025;
         }
       });
     return(
-        <mesh ref={myMesh} position={hover ? [0.02,1.062,0] : [0.02,1.072,0]} onPointerOver={() => {setHover(true);}} onPointerOut={() => {setHover(false);}}>
+        <mesh ref={myMesh} position={hover ? [0.02,1.052,0] : [0.02,1.072,0]} onPointerOver={() => {setHover(true);}} onPointerOut={() => {setHover(false);}}>
             <mesh rotation={[0,0,0.82]} position={[-1.3,1.24,0]}>
                 <coneGeometry attatch="geometry" args={[0.2,3.5,64,1,0,6.283185307179586]}/>
                 <meshNormalMaterial attach="material"/>
