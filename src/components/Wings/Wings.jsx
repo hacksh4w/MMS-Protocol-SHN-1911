@@ -12,15 +12,15 @@ function Wings3(){
       });
     return(
         <mesh ref={myMesh} position={[0,1.05,0]} onPointerOver={() => {setHover(true);}} onPointerOut={() => {setHover(false);}}>
-            <mesh rotation={[0,0,0.785398]} position={[-1.4,1.4,0]}>
+            <mesh rotation={[0,0,0.785398]} position={[-1.35,1.35,0]}>
                 <coneGeometry attatch="geometry" args={[0.2,3.5,64,1,0,6.283185307179586]}/>
                 <meshNormalMaterial attach="material"/>
             </mesh>
-            <mesh rotation={[0,0,3.14159]} position={[0,-1.95,0]}>
+            <mesh rotation={[0,0,3.14159]} position={[0,-1.87,0]}>
                 <coneGeometry attatch="geometry" args={[0.2,3.5,64,1,0,6.283185307179586]}/>
                 <meshNormalMaterial attach="material"/>
             </mesh>
-            <mesh rotation={[0,0,-0.785398]} position={[1.4,1.4,0]}>
+            <mesh rotation={[0,0,-0.785398]} position={[1.35,1.35,0]}>
                 <coneGeometry attatch="geometry" args={[0.2,3.5,64,1,0,6.283185307179586]}/>
                 <meshNormalMaterial attach="material"/>
             </mesh>

@@ -2,7 +2,7 @@ import React from 'react'
 import {Canvas} from "@react-three/fiber";
 export default function Sphere() {
     return (
-        <Canvas className='sphere' style={{width:'25px',height:'25px'}}>
+        <Canvas className='sphere' style={{width:'30px',height:'30px'}}>
             <ambientLight intensity={0.5}/>
             <directionalLight position={[-2,5,2]} intensity={1}/>
             <mesh className='sphere' rotation={[90,0,20]}>
