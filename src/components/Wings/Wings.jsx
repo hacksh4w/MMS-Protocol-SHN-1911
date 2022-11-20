@@ -7,7 +7,7 @@ function Wings3(){
     const myMesh = React.useRef();
     useFrame(() => {
         if (hover) {
-          myMesh.current.rotation.z -= 0.015;
+          myMesh.current.rotation.z -= 0.025;
         }
       });
     return(
